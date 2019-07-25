@@ -1,8 +1,9 @@
 /*
  * Arduino map() function only works for integers;
- * By changing variable types, a floating point version is made.
+ * A floating point version is made by changing the data types.
  *
  */
+
 
 /// setup function
 void setup() {
@@ -25,8 +26,9 @@ void setup() {
 }
 
 
+///
 void loop() {
-    ;    // nothing
+    ;
 }
 
 

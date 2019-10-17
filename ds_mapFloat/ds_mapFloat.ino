@@ -1,17 +1,19 @@
 /*
- * Arduino map() function only works for integers;
- * A floating point version is made by changing the data types.
+ * The Arduino map() function only works for integers;
+ * Here is a floating-point version made by changing the data types.
  *
  */
-
+#include <arduino.h>
 
 /// setup function
 void setup() {
     // Set up serial port
     Serial.begin(57600);
     // the while loop is needed for devices with USB port for programming
+    digitalWrite(13,1);
     while (!Serial && (millis() < 5000)) {} // program continues after time interval even if a monitor window is never opened
     Serial.println("\nPort initialized.\n");
+    digitalWrite(13,0);
 
     // test new mapping function
     String str = "";
